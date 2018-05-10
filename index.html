@@ -1,15 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.user_info{
+			background-color: #4c4c4c;
+			height: 80px;
+		}
+        
+        .logo{
+        height: 80px;
+        width: 200px;
+        float:left;
+        text-align: center;
+        font-family: Helvetica, Arial;
+        font-size: 30px;
+        color: #FFF;
+        margin:15px 5px 5px 5px;	
+        }
+
+
+        .clearfix{
+        float: right;
+        position: relative;
+        height: 80px;
+        width: 300px;
+        text-align: center;
+         }
+
+        .clearfix span{
+        line-height: 80px;
+        font-family: Helvetica, Arial;
+        font-size: 15px;
+        color: lightgrey;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        text-align: right;
+        }
+
+
+		.logo_box{
+			height: 60px;
+			background-color: #4c4c4c;
+			}
+
+			.logo_box span{
+		   	position: relative;
+	        width: 200px;
+	        height: 60px;
+	        text-align: left;
+	        font-family: Helvetica, Arial;
+	        font-size: 18px;
+	        color: #FFF;
+	        margin-left: 0;
+	        margin-right: 30px;
+	        }
+
+	       .findmore{
+	        font-family: Helvetica, Arial;
+	        font-size: 20px;
+	        float:center;
+	        position: relative;
+	        padding-bottom: 2px;
+	        width:400px;
+	        height: 40px;
+	        margin-right: 17px;
+	        color: lightgrey;
+			}
+
+			.answer{
+			font-family: Helvetica, Arial;
+	        font-size: 18px;
+	        position: relative;
+	        float:center;
+	        width:80px;
+	        height: 30px;
+	        margin-right: 3px;
+	        }
+
+		
+		.main{
+			background-color: #FFFFF0;
+			height: 700px;
+			border-bottom: 4px solid #BCD2EE;
+		}
+			.map{
+				height: 700px;
+				width: 360px;
+				float: left;
+				border-right: 2px solid #BCD2EE;
+			}
+
+			.map h2{
+
+	        	text-align: center;
+	        	font-size: 20px;
+	        	width: 150px;
+	        	font-family: Helvetica, Arial;
+	        	color: #FFF;
+	        	background-color: #BCD2EE;
+	        	margin: 0 auto;
+	        	line-height: 100px;
+	        	margin-right: 80px;
+	        	margin-top: 160px;
+	        }
+
+
+		.scoll_img{
+			width: 578px;
+			height: 180px;
+			float: right;
+			margin-left: 15px;
+			border-bottom: 2px solid #BCD2EE;
+			border-left: 2px solid #BCD2EE;
+		}
+
+		.scoll_img h2{ 
+			font-family: Helvetica, Arial;
+	        color: #000;
+	        text-align: center;
+	        font-size: 28px;
+
+		}
+		
+		.screen{ 
+			font-family: Helvetica, Arial;
+			color: #000;
+	        text-align: center;
+	        font-size: 17px;
+	        margin-bottom: 3px;}
+	     
+	    .result{
+	    	height: 520px;
+	    	width: 578px;
+	    	float: right;
+			margin-left: 15px;
+			border-left: 2px solid #BCD2EE;
+
+
+	    } 
+
+	    .result h2{
+	    		text-align: center;
+	        	font-size: 20px;
+	        	width: 150px;
+	        	font-family: Helvetica, Arial;
+	        	color: #FFF;
+	        	background-color: #BCD2EE;
+	        	margin: 0 auto;
+	        	line-height: 100px;
+	        	margin-right: 250px;
+	        	margin-top: 100px;
+
+	    }
+
+		.bottomline{
+        	background-color: #4c4c4c;
+        	height: 100px;
+          	margin:0;
+          	}
+          	.bottomline h3{
+         text-align: left;
+         font-family: Helvetica, Arial;
+         color: #FFF;
+         font-size: 27px;
+         margin-top: 0px;
+         }
+
+	       .reason{
+	         text-align: left;
+	         font-family: Helvetica, Arial;
+	         color: #FFF;
+	         font-size: 15px;
+	         margin-top: 20px;
+	         margin-right: 8px;
+	         }
+         
+         .bottomright{
+         	float:right;
+         	width: 300px;
+         	height: 50px;
+         	line-height: 50px;
+         	text-align: center;
+         	margin-top:15px;
+         	margin-right: 0px;
+         	color:lightgrey;
+         }
+
+
+
+		.container{
+			width: 960px;
+			margin: 0 auto;
+		}
+		
+	</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
+	<div class="container">
+		<div class="user_info">
+			<div class="logo">NYU-ROOM </div>
+				<div class="clearfix">
+				  	<span class="nav">Sign In</span>
+				  	<span class="nav">About Us</span>
+				  	<span class="nav">Contact</span>
+			    </div>
+	    </div>	
+
+		
+		<div class="logo_box">
+			<span>
+			Know More About NY!
+			</span>
+			
+			 <select name="district" class="findmore" >
+			 	<option value="">Preferred District</option>
+			 	<option value="">A</option>
+			 	<option value="">B</option>
+			 	<option value="">C</option>
+			 	<option value="">D</option>
+			 	<option value="">E</option>
+			 	<option value="">blabla</option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 	<option value=""></option>
+			 </select>
+		    <button class="answer">
+		 	Search
+		   </button>
+		</div>
+		
+
+		<div class="main">
+			<div class="map">
+				<h2>Map Conuslt  
+	            </h2>		
+			</div>
+				<div class="scoll_img">
+				<h2> Screening Conditions </h2>
+				 <form action="" class="screen">
+		          <input type="checkbox"> Safety
+		          <input type="checkbox"> Distance
+		          <input type="checkbox">  Affordability
+				  	
+			     </form>
+			     </div>
+
+			<div class="result">
+			<h2> Search Results</h2>	
+			</div>
+		</div>
+
+		<div class="bottomline">
+			
+			<h3>WHY YOU CHOOSE US? </h3>
+			<div class="reason">
+			
+				<span>1/ Lowest Price</span>
+				<span>2/ Best Choice</span>
+				<span>3/ Professional Team</span>
+			
+			</div>
+			
+			<div class="bottomright">
+				APP DOWNLOAD
+
+			</div>
+
+		</div>
+
+		
+	</div>
+	
 </body>
 </html>
